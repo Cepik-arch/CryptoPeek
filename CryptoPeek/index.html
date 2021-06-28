@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CryptoCheck</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/4950/4950385.png">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" async defer></script>
+    <header class="top" id="top">
+            <div class="slogan"><h1>"If you don’t believe it or don’t get it, I don’t have the time to try to convince you, sorry."</h1>
+            <h2>– Satoshi Nakamoto, The founder of Bitcoin</h2>
+            </div>
+            <div class="containerTop">
+                <script type="text/javascript">
+                    baseUrl = "https://widgets.cryptocompare.com/";
+                    var scripts = document.getElementsByTagName("script");
+                    var embedder = scripts[ scripts.length - 1 ];
+                    var cccTheme = {"General":{"background":"rgba(0, 0, 0, 0.75)","borderColor":"rgba(0, 0, 0, 0)","borderRadius":"0"},"PoweredBy":{"textColor":"#EEE","linkColor":"#ffcc66"},"Data":{"priceColor":"#FFF","infoValueColor":"#FFF","borderColor":"rgba(0, 0, 0, 0)"},"NewsItem":{"background":"rgba(0, 0, 0, 0.69)","color":"#FFF","borderColor":"rgba(0, 0, 0, 0.69)"},"Chart":{"fillColor":"#fbc531"},"Conversion":{"background":"#000","color":"#CCC"}};
+                    (function (){
+                    var appName = encodeURIComponent(window.location.hostname);
+                    if(appName==""){appName="local";}
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    var theUrl = baseUrl+'serve/v1/coin/feed?fsym=BTC&tsym=USD&feedType=cryptoglobe';
+                    s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                    embedder.parentNode.appendChild(s);
+                    })();
+                </script>
+            </div>
+            <div class="scroll" >
+            <section id="section">
+                <a href="#main"><span></span><span></span>Scroll</a>
+            </section>
+            </div>
+    </header>
+    <header class="main">
+        <div class="container" id="main">  
+            <input id="userInput" type="text" placeholder="Crypto Symbol" style="text-transform:uppercase">
+            <button type="button" id="translateBtn">SEARCH</button>
+            <p>Please enter only valid cryptocurrency symbol. <a href="https://coinmarketcap.com/all/views/all/">List of all symbols</a></p>
+            <div class="container2" >
+                <div id="nameCrypto"></div>
+                <div id="price"></div>
+            </div>
+            <div class="containerLastSearch" >
+                <h1>Last Searched</h1>
+                <ul id="historyList">
+                </ul>
+                
+            </div>
+        </div>   
+    <div id="timestamp"></div>
+    </header>
+</body>
+
+</html>

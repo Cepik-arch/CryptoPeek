@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: monospace;
+  background: -webkit-gradient(linear, left top, left bottom, from(#192a56bb), to(#e1b12c));
+  background: linear-gradient(#192a56bb, #e1b12c);
+}
+
+.CryptoName {
+  text-align: center;
+  font-size: 22px;
+}
+
+.CryptoPrice {
+  text-align: center;
+  font-size: 22px;
+}
+
+.top {
+  height: 1000px;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#273c75), color-stop(#fbc531), to(#e1b12c));
+  background: linear-gradient(#273c75, #fbc531, #e1b12c);
+}
+
+.top .containerTop {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2em auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.top .slogan {
+  text-align: center;
+  margin: 2em auto;
+  max-width: 800px;
+}
+
+.top .slogan h1 {
+  font-size: 36px;
+  color: white;
+}
+
+.top .slogan h2 {
+  padding-top: 10px;
+  font-size: 24px;
+  color: #d5d5d5;
+}
+
+.top .scroll {
+  padding: 5px 0px 10px 0px;
+  text-align: center;
+}
+
+.top .scroll a {
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #273c75;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.top .scroll a:hover {
+  opacity: .6;
+}
+
+.top .scroll #section a {
+  padding-top: 50px;
+}
+
+.top .scroll #section a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 3px solid #273c75;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top .scroll #section a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 2px solid #273c75;
+  border-bottom: 2px solid #273c75;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  margin-top: 20px;
+  padding: 5em;
+  background: #192a56ec;
+}
+
+.main .container {
+  min-height: 800px;
+  max-width: 600px;
+  margin: 1em auto;
+  padding: 1.25em;
+  background: #2f364093;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 3px rgba(113, 128, 150, 0.06), 0 9px 9px rgba(113, 128, 150, 0.04), 0 18px 18px rgba(113, 128, 150, 0.02);
+          box-shadow: 0 3px 3px rgba(113, 128, 150, 0.06), 0 9px 9px rgba(113, 128, 150, 0.04), 0 18px 18px rgba(113, 128, 150, 0.02);
+}
+
+.main .container .container2 {
+  max-width: 400px;
+  margin: 1em auto;
+  padding: 1.25em;
+  background-color: #353b48;
+  border-radius: 8px;
+  color: white;
+}
+
+.main .container .containerLastSearch {
+  max-width: 400px;
+  min-height: 400px;
+  margin: 1em auto;
+  padding: 1.25em;
+  border-radius: 8px;
+  background-color: #353b4887;
+  color: white;
+}
+
+.main .container .containerLastSearch h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.main .container .containerLastSearch li {
+  margin: 1em auto;
+  padding: 0.25em;
+  text-align: center;
+  background-color: #353b48;
+  list-style-type: none;
+}
+
+.main p {
+  text-align: center;
+  color: #888888;
+  font-size: 12px;
+}
+
+.main p a {
+  color: #888888;
+  font-size: 12px;
+}
+
+.main input {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #22252b;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #353b48;
+  color: white;
+}
+
+.main button {
+  width: 24%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #353b48;
+  color: white;
+}
+
+.main button:hover {
+  background-color: #fbc531;
+  color: #273c75;
+}
+
+.main #nameCrypto {
+  text-align: center;
+  font-size: 32px;
+}
+
+.main #price {
+  text-align: center;
+  font-size: 32px;
+}
+
+.main #timestamp {
+  text-align: center;
+  color: #888888;
+  font-size: small;
+}
+/*# sourceMappingURL=main.css.map */

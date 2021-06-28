@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: monospace;
+    background: linear-gradient(#192a56bb, #e1b12c);
+    
+  }
+
+.CryptoName{
+    text-align: center;
+    font-size: 22px;
+}
+.CryptoPrice{
+    text-align: center;
+    font-size: 22px;
+}
+
+.top{
+    height: 1000px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+    background: linear-gradient(#273c75, #fbc531, #e1b12c);
+
+    .containerTop{
+        width: 90%;
+        max-width: 1000px;
+        margin: 2em auto;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    .slogan{
+        text-align: center;
+        margin: 2em auto;
+        max-width: 800px;
+
+        h1{
+            font-size: 36px;
+            color:white;
+        }
+        h2{
+            padding-top: 10px;
+            font-size: 24px;
+            color:rgb(213, 213, 213);
+        }
+    }
+
+    .scroll{
+        padding: 5px 0px 10px 0px;
+        text-align: center;
+        a {
+            display: inline-block;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            color: #273c75;
+            font : normal 400 20px/1 'Josefin Sans', sans-serif;
+            letter-spacing: .1em;
+            text-decoration: none;
+            transition: opacity .3s;
+          }
+          a:hover {
+            opacity: .6;
+          }
+
+        #section a {
+            padding-top: 50px;
+        }
+        #section a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            margin-left: -23px;
+            border: 3px solid #273c75;
+            border-radius: 100%;
+            box-sizing: border-box;
+        }
+        #section a span::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin: -12px 0 0 -8px;
+            border-left: 2px solid #273c75;
+            border-bottom: 2px solid #273c75;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+
+        }
+    }
+      
+}
+.main{
+    margin-top: 20px;
+    padding: 5em;
+    background: #192a56ec;
+    .container{
+        min-height: 800px;
+        max-width: 600px;
+        margin: 1em auto;
+        padding: 1.25em;
+        background: #2f364093;
+        border-radius: 8px;
+        box-shadow: 0 3px 3px rgba(#718096, .06), 0 9px 9px rgba(#718096, .04), 0 18px 18px rgba(#718096, .02);
+        .container2{
+            max-width: 400px;
+            margin: 1em auto;
+            padding: 1.25em;
+            background-color: #353b48;
+            border-radius: 8px;
+            color: white;
+        }
+        .containerLastSearch{
+            max-width: 400px;
+            min-height: 400px;
+            margin: 1em auto;
+            padding: 1.25em;
+            border-radius: 8px;
+            background-color: #353b4887;
+            color: white;
+            
+            h1{
+                text-align: center;
+                font-size: 32px;
+            }
+
+            li{
+                margin: 1em auto;
+                padding: 0.25em;
+                text-align: center;
+                background-color: #353b48;
+                list-style-type: none;
+            }
+        }
+        
+    }
+    p{
+        text-align: center;
+        color: rgb(136, 136, 136);
+        font-size: 12px;
+        a{
+            color: rgb(136, 136, 136);
+            font-size: 12px;
+        }
+    }
+    input{
+        width: 75%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #22252b;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: #353b48;
+        color: white;
+    }
+    button{
+        width: 24%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: none;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: #353b48;
+        color: white;
+    }
+    button:hover{
+        background-color: #fbc531;
+        color: #273c75;
+    }
+
+    #nameCrypto{
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    #price{
+        text-align: center;
+        font-size: 32px;
+      }
+      
+      #timestamp {
+        text-align: center;
+        color: rgb(136, 136, 136);
+        font-size: small;
+      }
+}
+
